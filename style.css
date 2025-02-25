@@ -1,471 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meet Our Team 🗽 </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); 
+      color: rgb(247, 8, 139);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-@import url('https://fonts.googleapis.com/css2?family=quicksand:wgh@300;400;500;600;700&disply=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: "Quicksand",sans-serif;
+    .header {
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
 
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-.container{
-    max-width: 1100px;
-    margin: auto;
-}
-/*utility class*/
-.primary-text{
-    color: #e4b95b;
-}
-.btn{
-    display: inline-block;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-}
-.btn-primary{
-    color: #fff;
-    border: 1px solid#fff; 
-}
-.btn-secondary{
-    color: #fff;
-    background: #383848;
-    margin-top: 2rem;
-}
-.btn-primary:hover,
-.btn-secondary:hover{
-    background: #e4b95b;
-}
-/*header start */
-header{
-    height: 100vh;
-    background: url('./img/1723334931643.jpg')center center/cover no-repeat;
-    position:relative;
-}
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .logo {
+      width: 150px;
+      height: 150px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      margin-right: 30px;
+    }
 
-}
-#navbar img{
-    width:80px;
-    margin-left:100px ;
-}
-#navbar ul{
-    display: flex;
-    margin-right: 100px;
-}
-#navbar ul li a{
-    padding: 15px 20px;
-    color: #fff;
-    font-weight: 600;
-
-}
-#navbar ul li a:hover{
-    border-bottom: 2px solid #e4b;
-
-}
-header .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 75%;
-}
-header .content h1{
-    font-size: 40px;
-    color: #fff;
-
-}
-header ,.content p{
-    margin: 20px 0 40px;
-    color: #fff;
-}
-
-header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgb(0,0,0,0.6);
-}
-header *{
-    z-index: 10;
-}
-
-
-
-#about{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f4f4f4;
-
-}
-#about .title,
-#offers .title,
-#menu .title{
-    text-align: center;
-    margin-bottom: 4rem;
-}
-#about h2,
-#offers h2,
-#menu h2,
-#gallery h2{
-    font-size: 40px;
-    margin-bottom: 20px;
-
-}
-#about h2,
-#menu h2{
-    color: #383848;
-}
-
-#about .title p,
-#menu  .title p{
-    font-size: 14px;
-    color: #9a9a9a;
-    font-weight: 600;
-}
-#about .about-content{
-    display: flex;
-    justify-content: space-between;
-}#about .about-content img{
-    width: 500 px;
-    height: 350px;
-    margin-bottom: auto;
-}
-#about .about-content p {
-    color: #da0e0e;
-    margin-right: 7rem;
-    font-weight: 500;
-    line-height: 1.6;
-    font-style: italic;
-}
-
-#offers{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    background: url('./img/1723334817917.jpg')center center/cover fixed ;
-    
-}
-
-#offers h2{
-    color: #e4b95b;
-}
-#offers .title{
-    color: #fff;
-    font-weight: 500;
-}
-#offers .offers-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
-
-#offers .offers-items img{
-    width: 200px;
-}
-#offers .container .offers-items p{
-    color: #e6e315;
-    font-size: large;
-    font-style: italic;
-    
-}
-#offers.offers-items h3{
-    font-size: 25px;
-    margin: 15px 0;
-}
-#offers.offers-items p{
-    font-size: 14px;
-    padding: 0 20px;
-    font-weight: 300;
-    margin-bottom: 15px;
-}
-#offers .offers-items span{
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 5px;
-}
-
-
-
-
-
-#menu{
-    background: #f4f4f4;
-    padding: 5rem;
-}
-#menu .menu-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#menu .menu-items .menu-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
-}
-#menu .menu-items .menu-item img{
-    width: 80px;
-    border-radius:50% ;
-    margin-right: 20px;
-}
-#menu .menu-items .menu-item h3{
-color: #383848;
-border-bottom: 1px dashed #c2bdc2;
-padding-bottom: 10px;
-margin-bottom: 10px;
-position: relative;
-}
-#menu .menu-items .menu-item p{
-    font-style: italic;
-    color: #06df2a;
-}
-#menu .menu-items .menu-item span{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-#menu .btn{
-    display: block;
-    margin:20px auto 0 ;
-    background: #e4b95b;
-    color: #fff;
-    cursor: pointer;
-}
-#menu .btn:hover{
-    background: #383843;
-}
-
-/* menu end */
-/* Daytim start */
-#daytime{
-    background: url(./img/1723334714141.jpg) center center/cover fixed no-repeat;
-    color: #fff;
-    text-align: center;
-}
-#daytime .daytime-items {
-display: flex;
-justify-content: space-evenly ;
-align-items: center;
-height: 40vh;
-}
-#daytime .daytime-items img{
-    width: 80px;
-    border-radius:50% ;
-    margin-right: 20px;
-}
-
-#daytime .daytime-items h3{
-font-size: 32px;
-margin: 20px 0 10px;
-color: #f00d0d;
-
-}
-#daytime .daytime-items p {
-    font-weight: 500;
-}
-
-#gallery{
-    background: url(./img/hhjd.jpg) center center/cover  no-repeat;
-    padding: 8rem 0 6rem;
-}
-#gallery h2{
-    columns: #fff;
-    color: #e4b;
-    text-align: center;
-}
-#gallery .img-gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-#gallery .img-gallery img{
-    width: 280px;
-    height: 200px;
-    border-radius: 15px;
-    margin: 20px;
-    opacity: 0.8;
+    .logo-text  {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2em;
+      color: #007bff;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
     
 
+    .logo::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 50%, #007bff, transparent);
+      animation: glow 2s linear infinite;
+    }
+
+    @keyframes glow {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .content {
+      padding: 30px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(to bottom, #be096d, #03b61b);
+      
+      
+      
+    }
+
+     h1 {
+       
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 20px;
+      
+      
+     
+    }
+    
+   
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: linear-gradient(to bottom, #2ed604, #eb09cd);
+       max-width: 189vh;
+    }
+    .team-members :hover{
+      background: linear-gradient(to bottom, #6d7cd4, #ffcfcf);
+    }
+
+    .member {
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      
+     
+      
+    }
+    .member:hover{
+      transform: translateY(-5px);
+      background: linear-gradient(to bottom, #4720a1, #10c20a);
+      box-shadow: 0 2px 4px rgb(0, 0, 0.1);
+      cursor: pointer;
+
+    }
+
+    .member img  {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      
+      
+    }
+    .member img:hover{
+      overflow: hidden;
+      transform: scale(1.1);
+    }
+    .member h2 {
+      margin-bottom: 5px;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+      animation: glow 1s ease-in-out infinite alternate;
+
+     
+    }
+
+    .member p {
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+     animation: glow 1s ease-in-out infinite alternate;
+
+    }
+    
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
 }
-#gallery .img-gallery img:hover{
-opacity: 1;
-}
-/* Gallary end */
-/* contact strt */
-#contact{
-    padding: 5rem;
-    background: #f4f4f4f4;
-}
-#contact .container{
-    max-width: 900px;
-}
-#contact .contact-content{
+    .p{
+      color: #f50606;
+      
+    }
+    
+    .n{
+      margin-left: 120px;
+    
+    }
+    
+ #navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:left;
     align-items: center;
+
+
 }
-#contact .contact-content .contact-info{
-    width: 50%;
+  #navbar img{
+    
+    width:200px;
+    margin-left:200px ;
 }
-#contact .contact-content .contact-info div{
-    margin: 30px 0;
-    line-height: 1.7;
+   
+    .t{
+      width:60vh;
+      background: linear-gradient(to bottom, #1331d6, #151815);
+      border-radius: 90px;
+      margin-left: 100px;
+      animation: color-change 5s infinite;
+    }
+    
+    .t.l{
+      
+      color: rgb(35, 224, 10);
+      margin-left: 170px;
+
+    }
+    
+.t h1, .t h3 {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+  animation: color-change 5s infinite alternate; 
 }
-#contact .contact-content .contact-info h3{
-    font-size: 28px;
-    color: #383848;
-    margin-bottom: 10px;
+
+@keyframes color-change {
+  0% {
+    color: #007bff; 
+    text-shadow: 0 0 10px blue;
+  }
+  50% {
+    color: #ff0000; 
+    text-shadow: 0 0 10px red;
+  }
+  100% {
+    color: #00ff00;
+    text-shadow: 0 0 10px green;
+  }
 }
-#contact .contact-content .contact-info p{
-    color: #9a9a9a;
-}
-#contact .contact-content .contact-info i{
-    color: #e4b95b;
-    margin-right:5px;
-}
-contact .contact-content .contact-info a i{
-    color: #fff;
-    background-color: #383843 ;
-    padding: 15px;
-    border-radius:50%;
-    font-size: 20px;
-}
-contact .contact-content .contact-info a i:hover{
-    background: #e4b95b;
-    color: #383843;
-}
-form{
-    width: 50%;
-}
-form input,textarea{
-    display: block;
-    width: 100%;
-    padding: 20px 15px;
-    margin: 20px 0;
-    border: none;
-    background-color: #e3e2e3;
-}
-#contact .btn{
-    background: #e4b95b;
-    color: #fff;
-    cursor: point;
-}
-#contact .btn:hover{
-    background-color: #383848;
-}
-.r{
-    background: #e4b;
+
+    .footer {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      background: url('./img/shapes-3d-4k-yj-3840x2400.jpg')center center/cover fixed ;
+    }
+     .footer p {
+      color: #333;
+    }
+    .d{
+      
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    }
+   .d img{
+    margin-left: 650px;
+    width:200px;
+    border-radius: 6vh;
+    }
+   .r{
+    background: none;
     color: #fff;
     font-size: large;
     cursor: pointer;
-    border:7px solid #06df2a;
+    border:5px solid #06df2a;
     display: inline-block;
     padding: 15px 30px;
     border-radius: 15px;
-    margin-left: 230px;
+    margin-left: 30px;
+    text-decoration:#03b61b;
+    font-style:italic;
+}
+ .r:hover{
+  background: linear-gradient(to bottom, #50db2d, #d31aab);
+  border:7px solid #df06a9;
 
 }
+.moving-text{
+  animation:moveText 2s infinite alternate;
+}
+@keyframes moveText {
+  0% {
+    transform:translateX(0);
+  }
+  100%{
+    transform: translateX(200px);}
 
-.r:hover{
-    background: linear-gradient(to bottom, #50db2d, #d31aab);
-    border:7px solid #df06a9;
-  
   }
 
+ .f{
+  background: linear-gradient(to bottom, #136e6a, #0a0a0a);
+  margin-left: 200px;
+  margin-right: 180px;
+  height: 20vh;
+
+ }
 
 
-#footer{
-    background: #383848;
-    text-align: center;
-    color: #fff;
-    padding: 15px 0;
-    font-size: 14px;
+#o{
+  color: #03b61b;
 }
-#footer a{
-    color: #fff;
+
+.j{
+  color: #d5d810;
+  
+}
+#o{
+  color:#d5d810 ;
+  position: sticky;
+  top: 0;
+}
+
+.qq{
+  color: red;
 }
 
 
 
 
 
+.video-section {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 600px;
+      background: linear-gradient(to right, #f00, #ff0, #0ff);
+      animation: gradient-animation 15s ease infinite;
+    }
+    
 
-.ad-container {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 300px;
-    background-color: #fff;
-    border: 2px solid #2ed604;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: none; 
-    z-index: 1000;
-}
-.ad-header {
-    background: linear-gradient(90deg, #2ed604, #1a7f3d); 
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.ad-header h2 {
-    margin: 0;
-    font-size: 18px;
-    text-shadow: 0 0 10px #fff; 
-}
-.close-btn {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-    color: #ee1010;
-    font-weight: bold;
-}
-.ad-content {
-    position: relative;
-    text-align: center;
-}
-.ad-content img {
-    width: 100%;
-    border-radius: 5px;
-}
-.site-name {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.7); 
-    padding: 5px;
-    border-radius: 5px;
-}
-.ad-content p {
-    margin: 10px 0;
-    font-size: 16px;
-    color: #e93701; 
-    text-shadow: 0 0 10px #ffcc00;
-}
+    .video-container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    video {
+      width: 40%;
+      height: 250px;
+    }
+
+    .ball {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      animation: ball-animation 5s linear infinite;
+    }
+
+    @keyframes ball-animation {
+      0% {
+        left: 0;
+        transform: scale(1); 
+      }
+      50% {
+        left: 50%;
+        transform: scale(1.2);
+      }
+      100% {
+        left: 100%;
+        transform: scale(1); 
+      }
+    }
+
+
+
+
+
+
+
+
+    
+    .ad-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            background-color: #fff;
+            border: 2px solid #2ed604;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: none; /* مخفي افتراضياً */
+            z-index: 1000;
+        }
+        .ad-header {
+            background: linear-gradient(90deg, #2ed604, #1a7f3d); 
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .ad-header h2 {
+            margin: 0;
+            font-size: 18px;
+            text-shadow: 0 0 10px #fff; 
+        }
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+            color: #ee1010;
+            font-weight: bold;
+        }
+        .ad-content {
+            position: relative;
+            text-align: center;
+        }
+        .ad-content img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .site-name {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .ad-content p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #e93701; 
+            text-shadow: 0 0 10px #ffcc00; 
+        }
+
+
+
+
+
+
+  
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo"> 
+      <div class="logo-text">academy</div>
+    </div>
+ 
+    <h1>Meet Our Team </h1>
+    <div class="t">
+       <pr>
+        <br>
+        💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢 💢  💢 💢
+        <br>
+       
+         <h1 class="l">بسم الله الرحمان الرحيم</h1> 
+        
+        <br>
+        
+         <h3 class="n">اكاديمية العلوم الهندسية والطبية</h3> 
+       
+    </div>
+    <div id ="navbar">
+      <img src="u.jpg" alt="food lover logo">
+    </div>
+       
+  </header>
+
+  <main class="content">
+    <div class="team-members">
+      
+      <div class="member">
+        <img src="IMG_20241010_030938_748.jpg" alt="Member 1">
+        <h2 class="p"> لمياء حسين بشري عبد الكريم * </h2>
+        <p>Information Tichnology 5 (It) </p>
+        <h5><a href="mailto:lamiahussein75@gmail.com">lamiahussein75@gmail.com</a></h5>
+        🍷🍂
+        <br>
+      </div>
+      <div class="member">
+        <img src="IMG_20241010_030938_725.jpg" alt="Member 2">
+        <h2 class="p">رانيا محمد ميرغني الفحل * </h2>
+        <p> Information Tichnology 5 (It) </p>
+       <h5><a href="mailto:Raniaalfahal2r2@gmail.com">Raniaalfahal2r2@gmail.com</a></h5>
+       🍷🍂
+       <br>
+      </div>
+      <div class="member">
+        <img src="IMG_20241010_030938_688.jpg" alt="Member 3">
+        <h2 class="p"> دانية خضر محمد *</h2>
+        <p>Information Tichnology 5 (It) </p>
+        <h5><a href="mailto:khidermohameddania@gmail.com" >khidermohameddania@gmail.com</a></h5>
+        🍷🍂
+        <br>
+      </div>
+      <div class="member">
+        <img src="IMG_20241010_030938_341.jpg" alt="Member 4">
+        <h2 class="p">حياة الفاضل عبدالله خميس *</h2>
+        <p>Information Tichnology 5 (It) </p>
+        <h5><a href="mailto:hayatalfadil2112@gmail.com">Hayatalfadil2112@gmail.com</a></h5>
+        🍷🍂
+        <br>
+      </div>
+      <div class="member">
+        <img src="IMG_20241010_030938_372.jpg" alt="Member 4">
+        <h2 class="p">الطيب عوض  الجيد فضل المولي  *</h2>
+        <p>Information Tichnology 5 (It) </p>
+        <h5><a href="mailto:Aleteuep2535@gmail.com">Aleteuep2535@gmail.com</a></h5>
+        🍷🍂
+        <br>
+      </div>
+    </div>
+  </main>
+  
+  <div class="ad-container" id="adContainer1">
+    <div class="ad-header">
+        <h2>إعلان</h2>
+        <span class="close-btn" id="closeBtn1">×</span>
+    </div>
+    <div class="ad-content">
+        <img src="Gemini_Generated_Image_1fq9u51fq9u51fq9.jpg" alt="إعلان مطعم">
+        <div class="site-name">مطعم لابروميناد أنشانتيه</div>
+        <p>تمتع بأفضل المأكولات البحرية في جو مريح!</p>
+    </div>
+</div>
+
+<div class="ad-container" id="adContainer2">
+    <div class="ad-header">
+        <h2>إعلان</h2>
+        <span class="close-btn" id="closeBtn2">×</span>
+    </div>
+    <div class="ad-content">
+        <img src="Gemini_Generated_Image_lczryhlczryhlczr.jpg" alt="إعلان مطعم">
+        <div class="site-name">مطعم لابروميناد أنشانتيه</div>
+        <p>استمتع بأشهى الأطباق الفرنسية!</p>
+    </div>
+</div>
+
+
+
+  <footer class="footer">
+    
+    <h1 id="o" >   <span class="j"> <h2>La Promenade Enchantee 🍽 </h2>  **** </span> <span class="qq"> **** ****  </span>****   </h1>
+    <div class="f">
+   
+
+      <h1 class="moving-text"> 
+        🌱_________ خدمة العملاء __________ 🍕
+
+      </h1>
+      
+      <h2 style="background-color: rgb(15, 15, 15);display: inline;">  نقدم لكم في مطعمنا تجربة طعام مميزة تمزج بين النكهات الشهية 
+        والجودة العالية نحيط بكم علما بأن كل اهتمامنا ينصب علي تقديم افضل الوجبات لتلبية تطلعاتكم 
+        ورضاكم .ندعوكم للاستمتاع بتجربة طعام مميزة تليق بكم وصلي وسلم علي نبينا محمد 
+      <br>
+     * ولله الحمد *
+    </h2>
+
+    
+      
+      
+    
+    </div>
+    
+    <div class="d">
+      <img src="IMG_20240824_122254_056.jpg" alt="foodlover">
+      
+    </div>
+    <a href="index.html" class="r"  onclick="playAudio()"> 🍺 رجوع  للمطعم </a>
+
+    <h1 id="o" > ****<span class="qq"> **** ****  </span>  <span class="j"> **** **** **** **** </span> <span class="qq"> **** ****  </span>****   </h1>
+    
+    
+  
+
+  <br>
+  <h1>Thank<span class="j"> You </span> <span id="o"> for</span>  FOLLowing Us </h1>
+   
+ <h1 ><span class="qq">sound 🔊</span></h1>    
+                  
+ <audio controls =controls src="2_5287710507858420353.mp3" autoplay=true preload=auto loop=5 ; style= "display:ruby";> 
+  
+   
+  </footer>
+  
+  <section class="video-section">
+    <div class="ball"></div>
+    <div class="video-container">
+        <video src="1.mp4" autoplay muted loop></video>
+        <video src="2.mp4" autoplay muted loop></video>
+        <video src="4.mp4" autoplay muted loop></video>
+        
+    </div>
+    <div class="video-container">
+        <video src="8.mp4" autoplay muted loop ></video>
+        <video src="5.mp4" autoplay muted loop ></video>
+        <video src="10.mp4" autoplay muted loop ></video>
+
+    </div>
+   
+</section> 
+    
+
+  <marquee direction="right"; bgcolor="rgb(255,0,0) " style="background-color: rgb(8, 8, 8); height: 30px; color: #2ed604 ;  font-size: larger; border-radius: 10px;margin-left: 50px; margin-right: 50px;"  >      فقط html & css ملحوظة : الموقع غير حقيقي تم تصميمه كمشروع تخرج باستخدام لغة  * </marquee>
+
+
+  <p style="margin-left: 90vh; color: #3f0dc9;  ">&copy; 2024 all right reserved 🔏</p>
+  <br>
+  
+  <script>
+   
+    function showAd1() {
+        const adContainer1 = document.getElementById('adContainer1');
+        adContainer1.style.display = 'block'; 
+        setTimeout(() => {
+            adContainer1.style.display = 'none'; 
+            showAd2();
+        }, 10000);
+    }
+
+   
+    function showAd2() {
+        const adContainer2 = document.getElementById('adContainer2');
+        adContainer2.style.display = 'block'; 
+        setTimeout(() => {
+            adContainer2.style.display = 'none'; 
+        }, 10000);
+    }
+
+    
+    document.getElementById('closeBtn1').onclick = function() {
+        document.getElementById('adContainer1').style.display = 'none';
+    };
+
+    
+    document.getElementById('closeBtn2').onclick = function() {
+        document.getElementById('adContainer2').style.display = 'none'; 
+    };
+
+    
+    window.onload = showAd1; 
+</script>
+
+</body>
+</html>
